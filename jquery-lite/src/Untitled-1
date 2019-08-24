@@ -1,0 +1,15 @@
+let fourth1 = document.createElement("li")
+fourth1.textContent = "fourth"
+let ul = document.querySelector("ul")
+let lUl = $l(ul)
+let f4 = $l(fourth1)
+f4.textContent = "fifth"
+lUl.append(f4)
+lUl.append(fourth1)
+
+
+let ul = document.querySelector("ul")
+let lUl = $l(ul)
+let callback = (e) => {console.log(e.target)}
+lUl.on("click", callback)
+lUl.off("click")
